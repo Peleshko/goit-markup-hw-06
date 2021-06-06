@@ -483,9 +483,7 @@
         <div>
              <p class="social-link-title">подпишитесь на рассылку</p>
              <form class="form">
-                <label class="form-label">
-                     <input type="email" name="email" placeholder="E-mail" class="form-email"/>
-                </label>
+                <input type="email" name="email" placeholder="E-mail" class="form-email"/>
                 <button type="submit" class="form button">
                     <p class="form-button-text">Подписаться</p>
                     <svg class="social-list-icon">
@@ -506,6 +504,7 @@
                 </button>
                 <form action="#" class="modal-form">
                     <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
+                
                 <label class="modal-form-label">
                     Имя
                  <span class="modal-form-input-wrapper">
@@ -515,6 +514,7 @@
                    </svg>   
                  </span>   
                 </label>
+
                 <label class="modal-form-label">
                     Телефон
                   <span class="modal-form-input-wrapper">
@@ -524,6 +524,7 @@
                     </svg>  
                   </span>
                 </label>
+
                <label class="modal-form-label">
                 Почта
                  <span class="modal-form-input-wrapper">
@@ -533,15 +534,23 @@
                     </svg>   
                  </span>
                 </label>
+
                <label class="modal-form-label">
                 Комментарий
                    <textarea name="user-comment" placeholder="Введите текст" class="modal-form-comment"></textarea>
                </label>
-               <label class="modal-form-checkbox-policy">
-                  <input type="checkbox" name="user-policy" required class="modal-form-checkbox visually-hidden">
-                  <span class="checkbox-policy"></span> 
-                  <span>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span> 
-               </label>
+
+               <p class="policy">
+                <label class="modal-form-checkbox-policy">
+                    <input type="checkbox" name="user-policy" required class="modal-form-checkbox visually-hidden">
+                    <svg class="checkbox-policy" heigth="15" width="16">
+                      <use href="./images/icons.svg#icon-not-checked"></use>
+                   </svg>   
+                 <span>Соглашаюсь с рассылкой и принимаю </span> 
+                 <a href="">Условия договора</a>
+                 </label>  
+               </p>
+
                <button type="submit" class="modal-button button">Отправить</button>
                 </form>    
         </div>

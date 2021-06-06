@@ -5,7 +5,7 @@
     --secondary-text-color: #FFFFFF;
     --grey-bg-color: #2F303A;
     --white-bg-color: #E5E5E5;
-    --transition-duration: 2500ms;
+    --transition-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -18,7 +18,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-/*Верхняя линия*/
+/*==================Верхняя линия================================================*/
 
 .header {
     background-color: var(--secondary-text-color);
@@ -195,17 +195,17 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    transition-property: color;
+    transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--animation-timing-function);
 }
 
 .button:hover,
 .button:focus {
-    color: var(--accent-color);
+    background-color: #188ce8;
 }
 
-/*Особенности*/
+/*=================================Особенности=====================================*/
 
 .section {
     padding-top: 94px;
@@ -245,7 +245,7 @@ body {
     margin-bottom: 10px;
 }
 
-/*Чем мы занимаемся*/
+/*===============================Чем мы занимаемся=================================*/
 
 .heading {
     font-weight: 700;
@@ -288,7 +288,7 @@ body {
     padding: 27px 0 27px 0;
 }
 
-/*Наша команда*/
+/*===============================Наша команда======================================*/
 
 .team {
     background-color: #F5F4FA;
@@ -369,7 +369,7 @@ body {
     height: 20px;
 }
 
-/*Постоянные клиенты*/
+/*==============================Постоянные клиенты=================================*/
 
 .clients {
     display: flex;
@@ -417,7 +417,7 @@ body {
     color: var(--accent-color);
 }
 
-/*Футер*/
+/*========================================Футер===================================*/
 
 .footer {
     background-color: var(--grey-bg-color);
@@ -535,7 +535,7 @@ body {
     cursor: pointer;
 }
   
-/*Модальное окно*/
+/*==================================Модальное окно==================================*/
 
 .backdrop {
     position: fixed;
@@ -596,19 +596,15 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/*==================================ФОРМА ЗАЯВКИ====================================*/
 .form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-label {
-    margin-right: 12px;
-}
-
 .modal-form-label {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 12px;
 }
 
@@ -616,12 +612,23 @@ body {
     width: 358px;
     height: 50px;
     padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 12px;
 
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color: var(--secondary-text-color);
+
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--animation-timing-function);
+}
+
+.form-email:focus {
+    border-color: var(--accent-color);
+    outline: none;
 }
 
 .form-button-text {
@@ -708,7 +715,9 @@ body {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-checkbox {
+.policy {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .visually-hidden {
@@ -723,8 +732,8 @@ body {
   }
 
 .modal-form-checkbox-policy {
+    
     margin-top: 10px;
-    margin-bottom: 30px;
     padding-left: 36px;
 
     font-size: 14px;
@@ -744,7 +753,9 @@ body {
 .modal-form-checkbox:checked + .checkbox-policy {
     background-image: url(../images/checked.svg);
     background-color: var(--accent-color);
+    background-origin: border-box;
     border-radius: 2px;
+    border-color: var(--accent-color);
 }
 
 /*.modal-form-checkbox-policy::before {
@@ -769,7 +780,7 @@ body {
    align-self: center;
 }
 
-/*Портфолио*/
+/*=======================================Портфолио=================================*/
 
 .filter {
     margin-bottom: 50px;
@@ -902,7 +913,7 @@ body {
     margin-top: 4px;
 }
 
-/*Позиционирование*/
+/*===========================Позиционирование=======================================*/
 
 h1,
 h2,
